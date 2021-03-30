@@ -1,0 +1,75 @@
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin:auto;
+    padding:0%;
+
+}
+.userInterface{
+    width:100%;
+}
+.userResearch{
+    width:100%;
+}
+.webDevelopment{
+    width: 100%;
+}
+
+.push{
+    
+}
+
+
+       
+.workGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1.2fr 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: x 0px;
+        grid-template-areas:
+          ". . . . . . . . . . ."
+          ". project-1 project-1 project-1 project-1 . project-2 project-2 project-2 project-2 ."
+          ". project-1 project-1 project-1 project-1 . project-2 project-2 project-2 project-2 ."
+          ". project-1 project-1 project-1 project-1 . project-2 project-2 project-2 project-2 ."
+          ". project-1 project-1 project-1 project-1 . project-2 project-2 project-2 project-2 ."
+          ". project-1 project-1 project-1 project-1 . project-2 project-2 project-2 project-2 ."
+          ". . . . . . . . . . ."
+          ". project4 project4 project4 project4 . project3 project3 project3 project3 ."
+          ". project4 project4 project4 project4 . project3 project3 project3 project3 ."
+          ". project4 project4 project4 project4 . project3 project3 project3 project3 ."
+          ". project4 project4 project4 project4 . project3 project3 project3 project3 ."
+          ". project4 project4 project4 project4 . project3 project3 project3 project3 .";
+      }
+      .project-1 { 
+          grid-area: project-1; 
+          position: relative;
+        }
+      .project-2 { 
+          grid-area: project-2; 
+        }
+      .project3 { 
+          grid-area: project3; 
+        }
+      .project4 { 
+          grid-area: project4; 
+          position: relative;
+        }
+     h4{
+         font-size:20px;
+     }
+        h5 { 
+         font-size: 20px; 
+        }
+
+   
+   }     
+
+   @media only screen and (max-width:600){
+       .flexContainer: {
+       display: flex;
+       flex-direction:column;
+       }
+}
